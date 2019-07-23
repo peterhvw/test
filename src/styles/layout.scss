@@ -1,0 +1,25 @@
+#about {
+
+}
+
+#partners {
+
+}
+
+#statement {
+    background-color: $white;
+}
+
+footer {
+    color: $green; 
+    h3 {
+        text-transform: uppercase;
+        font-size: $font-size-base * 1.5;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        font-weight: $font-weight-bold;
+    }
+}

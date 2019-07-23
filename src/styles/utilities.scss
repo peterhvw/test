@@ -1,0 +1,23 @@
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.tekt-b-white {
+    color: $white;
+    font-weight: $font-weight-bold;
+}
+
+.tekst-annotation {
+    font-style: italic;
+    $font-size-lg: $font-size-base * 0.75 
+}
+
+.responsive-hide {
+    @include media-breakpoint-down(md) { 
+        display: none;
+     }
+}

@@ -1,0 +1,69 @@
+.img-container {
+    background-image: url("/assets/images/logoholder.svg");
+
+    height: 144px !important;
+    width: 144px !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    img {
+        padding: 28px !important;
+    }
+}
+
+.media {
+    @include media-breakpoint-up(md) {
+        .media-body {
+            padding-left: 50px;
+        }
+     }
+
+    @include media-breakpoint-down(md) { 
+        @include make-row();
+        .img-container{
+            @include make-col-ready();
+            @include make-col(2);
+            @include make-col-offset(4);
+        }
+
+        .media-body {
+            @include make-col-ready();
+            @include make-col(12);
+        }
+    }
+}
+
+
+.slide-top {
+    position: absolute;
+     top: 10%; 
+}
+ 
+.slide-bottom {
+    position: absolute;
+    top: 70%;
+    h1 {
+        font-size: $font-size-base * 4;
+    }
+}
+
+.text-container {
+    ul {
+        padding-left: 0px !important;
+    }
+    li {
+        @include make-row();
+        img {
+            @include make-col-ready();
+            @include make-col(1);
+            padding-right: 0px !important;
+            padding-left: 25px !important;
+            padding-bottom: 10px;
+        }
+        p {
+            @include make-col-ready();
+            @include make-col(10);
+            padding-left: 0x !important;
+
+        }
+    }
+}
