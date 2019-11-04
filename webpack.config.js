@@ -12,7 +12,6 @@ module.exports = {
 		filename: '[name].[chunkhash].js',
 		path: path.resolve(__dirname, 'dist')
 	},
-
 	plugins: [
 		new webpack.ProgressPlugin(), 
 		new HtmlWebpackPlugin({
@@ -32,7 +31,6 @@ module.exports = {
 	resolve: {
 		extensions: ['*', '.js', '.jsx']
     },
-
 	module: {
 		rules: [
 			{
